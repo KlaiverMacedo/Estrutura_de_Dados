@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vectors", "Vectors", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -62,6 +62,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataSearch", "DataSearch", "{88B5E1F2-F690-4818-9C2D-C76D06C9DADC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearchStatic", "DataSearchStatic\DataSearchStatic.csproj", "{9DC4C8C8-F9B0-4249-86C6-D85958924A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingAlgorithms", "SortingAlgorithms", "{6E027D1C-7EBC-4A43-914A-6E7DAB4924D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSort", "DataSort\DataSort.csproj", "{67445C30-202A-44B8-AB5F-BAB8177B8150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,10 @@ Global
 		{9DC4C8C8-F9B0-4249-86C6-D85958924A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC4C8C8-F9B0-4249-86C6-D85958924A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC4C8C8-F9B0-4249-86C6-D85958924A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67445C30-202A-44B8-AB5F-BAB8177B8150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67445C30-202A-44B8-AB5F-BAB8177B8150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67445C30-202A-44B8-AB5F-BAB8177B8150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67445C30-202A-44B8-AB5F-BAB8177B8150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -194,6 +202,7 @@ Global
 		{EEA75D4B-B355-4B08-A928-8D74FBC96E19} = {B99C6EF2-926D-4348-A57E-E8534DD6A444}
 		{33C904F3-7D30-4244-9FBF-C6B3B36CF299} = {B99C6EF2-926D-4348-A57E-E8534DD6A444}
 		{9DC4C8C8-F9B0-4249-86C6-D85958924A57} = {88B5E1F2-F690-4818-9C2D-C76D06C9DADC}
+		{67445C30-202A-44B8-AB5F-BAB8177B8150} = {6E027D1C-7EBC-4A43-914A-6E7DAB4924D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C15AD3FE-3805-4120-827D-5D605749FC30}
