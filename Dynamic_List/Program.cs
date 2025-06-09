@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dynamic_List
 {
-    class Program
+    public class ProgramDynamic_List
     {
         static void Main(string[] args)
-        {
+        { }
+        public static void Executa()
+             {
             List<char> list = new List<char>();
             int option;
             char value;
@@ -67,7 +69,7 @@ namespace Dynamic_List
                         value = Console.ReadKey().KeyChar;
                         Console.WriteLine();
                         Console.WriteLine(list.Contains(value)//Teste lógico
-                                                               //Verdadeiro
+                                                              //Verdadeiro
                             ? "Valor encontrado na lista"
                             //Falso
                             : "Valor não encontrado"
@@ -86,6 +88,6 @@ namespace Dynamic_List
                 }
 
             } while (option != 0);
+             }
         }
     }
-}

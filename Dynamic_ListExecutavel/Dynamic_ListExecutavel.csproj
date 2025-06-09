@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5E0433B-DE47-41F5-9A14-576B209557D3}</ProjectGuid>
+    <ProjectGuid>{0F01C329-A0E6-4DC3-B823-54AEFE6F91ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Dynamic_List</RootNamespace>
-    <AssemblyName>Dynamic_List</AssemblyName>
+    <RootNamespace>Dynamic_ListExecutavel</RootNamespace>
+    <AssemblyName>Dynamic_ListExecutavel</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
