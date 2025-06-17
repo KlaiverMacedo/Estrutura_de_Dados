@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Vectors_09
 {
-    class Program
+    public class ProgramVectors_09
     {
         static void Main(string[] args)
+        {
+        }
+        public static void Executa()
         {
         }
     }

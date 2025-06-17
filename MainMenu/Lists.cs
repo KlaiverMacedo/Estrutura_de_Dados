@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StaticList;
 
 
 namespace MainMenu
@@ -17,11 +18,17 @@ namespace MainMenu
                 ProgramDynamic_List.Executa();
 
             }
-        public static void PointerList()
-        {
-            Console.WriteLine("Projeto Lista de Ponteiros executado com sucesso!");
-            PointerListExecutavel.Executa();
+            public static void PointerList()
+            {
+                Console.WriteLine("Projeto Lista de Ponteiros executado com sucesso!");
+                PointerListExecutavel.Executa();
 
-        }
+            }
+            public static void StaticList()
+            {
+                Console.WriteLine("Projeto Lista Estatica executado com sucesso!");
+                ProgramStaticList.Executa();
+
+            }
     }
 }

@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Battery_02
 {
-    class Program
+    public class ProgramBattery_02
     {
         static void Main(string[] args)
+        {
+        }
+        public static void Execute()
         {
         }
     }

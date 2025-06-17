@@ -29,6 +29,7 @@ namespace Dynamic_List
                 Console.Write("Escolha uma posição: ");
                 option = int.Parse(Console.ReadLine());
 
+
                 switch (option)
                 {
                     case 0:

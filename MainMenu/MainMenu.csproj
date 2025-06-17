@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Battery.cs" />
     <Compile Include="Dynamic_List_Executavel.cs" />
     <Compile Include="Lists.cs" />
+    <Compile Include="Matrices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vectors.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -55,13 +58,105 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Battery_01\Battery_01.csproj">
+      <Project>{33602511-1407-4cb0-bb02-8c249b31b089}</Project>
+      <Name>Battery_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Battery_02\Battery_02.csproj">
+      <Project>{eea75d4b-b355-4b08-a928-8d74fbc96e19}</Project>
+      <Name>Battery_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Battery_03\Battery_03.csproj">
+      <Project>{33c904f3-7d30-4244-9fbf-c6b3b36cf299}</Project>
+      <Name>Battery_03</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSearchStatic\DataSearchStatic.csproj">
+      <Project>{9dc4c8c8-f9b0-4249-86c6-d85958924a57}</Project>
+      <Name>DataSearchStatic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSort\DataSort.csproj">
+      <Project>{67445c30-202a-44b8-ab5f-bab8177b8150}</Project>
+      <Name>DataSort</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dynamic_List\Dynamic_List.csproj">
       <Project>{b5e0433b-de47-41f5-9a14-576b209557d3}</Project>
       <Name>Dynamic_List</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Matrices_01\Matrices_01.csproj">
+      <Project>{f59d2125-590b-4e7b-92f8-cd356e4d1d34}</Project>
+      <Name>Matrices_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_02\Matrices_02.csproj">
+      <Project>{de7ba463-e688-4263-8ec8-f4361cb6033d}</Project>
+      <Name>Matrices_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_03\Matrices_03.csproj">
+      <Project>{b6e8358b-5bc2-4f34-aa3f-281c3b7c3b9f}</Project>
+      <Name>Matrices_03</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_04\Matrices_04.csproj">
+      <Project>{08d6b010-cae5-4d10-ad44-cf71f70905a7}</Project>
+      <Name>Matrices_04</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_05\Matrices_05.csproj">
+      <Project>{9e044424-c35f-49cc-b6d3-c2af1458c559}</Project>
+      <Name>Matrices_05</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_06\Matrices_06.csproj">
+      <Project>{96cbcf17-e0df-462d-a2bd-731dd431d1b8}</Project>
+      <Name>Matrices_06</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices_07\Matrices_07.csproj">
+      <Project>{083da385-43e2-4d62-b44e-8c238ed7fab2}</Project>
+      <Name>Matrices_07</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PointerList\PointerList.csproj">
       <Project>{33f9e201-377b-45bc-b23f-b8d4a5dcdbff}</Project>
       <Name>PointerList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Queues_01\Queues_01.csproj">
+      <Project>{dc5eb4b8-7859-48ab-baa1-d393f008b191}</Project>
+      <Name>Queues_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticList\StaticList.csproj">
+      <Project>{1fbec1ba-f914-4d46-a1d0-0cc963d6ce41}</Project>
+      <Name>StaticList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vectors_01\Vectors_01.csproj">
+      <Project>{9a5c3328-db61-4cab-b337-1f14aba5c5a9}</Project>
+      <Name>Vectors_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_02\Vectors_02.csproj">
+      <Project>{dfa4b6e6-f7db-4ad9-afe2-5e9b19591127}</Project>
+      <Name>Vectors_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_03\Vectors_03.csproj">
+      <Project>{4a2e5080-eeac-4132-81b2-c69d487b8c26}</Project>
+      <Name>Vectors_03</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_04\Vectors_04.csproj">
+      <Project>{56688882-d151-48e1-83ad-c9e439f76405}</Project>
+      <Name>Vectors_04</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_05\Vectors_05.csproj">
+      <Project>{7bd55ebd-5841-488c-81fb-0ff95ead27b1}</Project>
+      <Name>Vectors_05</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_06\Vectors_06.csproj">
+      <Project>{d67d44d2-68f4-49eb-b6ac-ebe919f6bdea}</Project>
+      <Name>Vectors_06</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_07\Vectors_07.csproj">
+      <Project>{8eafcaeb-e7ec-4847-900c-a706f8da477c}</Project>
+      <Name>Vectors_07</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_08\Vectors_08.csproj">
+      <Project>{d42d9cc9-9b0f-4baf-9acc-b9b6f5333311}</Project>
+      <Name>Vectors_08</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vectors_09\Vectors_09.csproj">
+      <Project>{d19bb66e-cc37-4bc1-86e6-def4b1fa13bc}</Project>
+      <Name>Vectors_09</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

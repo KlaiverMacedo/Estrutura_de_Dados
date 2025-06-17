@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HashTable
+{
+    public class HashTable<T>
+    {
+        private List<LinkedList<T>> table;
+        private int capacity;
+
+        public HashTable(int capacity = 10)
+        {
+            this.capacity = capacity;
+            table = new List<LinkedList<T>>(capacity);
+            for (int i = 0; i < capacity; i++)
+            {
+                table.Add(new LinkedList<T>());
+            }
+        }
+
+        private int Hash(T value)
+        {
+            return Math.Abs(value.GetHashCode()) % capacity;
+        }
+
+        public void Insert(T value)
+        {
+            int index = Hash(value);
+            if (!table[index].Contains(value))
+            {
+                table[index].AddLast(value);
+                Console.WriteLine($"{value} inserido na posição {index} ");
+            }
+
+            else
+            {
+                Console.WriteLine($"{value} já existe na posição {index} ");
+            }
+        }
+
+        public bool Search(T value)
+        {
+            int index = Hash(value);
+            return table[index].Contains(value);
+        }
+
+        public bool Remove(T value)
+        {
+            int index = Hash(value);
+            return table[index].Remove(value);
+        }
+
+        public void Display()
+        {
+            for (int i = 0; i < capacity; i++)
+            {
+                Console.Write($"[{i}]: ");
+                foreach (var item in table[i])
+                {
+                    Console.Write(item + " -> ");
+                    Console.Write("null");
+                }
+
+            }
+        }
+    }
+}

@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Matrices_01
 {
-    class Program
+    public class ProgramMatrices_01
     {
         static void Main(string[] args)
+        {
+        }
+
+        public static void Executa()
         {
         }
     }
