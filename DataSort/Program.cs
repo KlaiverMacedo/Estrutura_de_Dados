@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 
 namespace DataSort
 {
-    public class Program
+    public class ProgramDataSort
     {
-        
+
         static void Main(string[] args)
         {
+            Executa();
+        }
+        public static void Executa()
+        { 
             ListaDinamica<int> lista = new ListaDinamica<int>();
             while(true)
             {

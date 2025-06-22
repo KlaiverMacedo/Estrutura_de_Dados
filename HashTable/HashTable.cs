@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HashTable;
 
 namespace HashTable
 {
     public class HashTable<T>
     {
-        private List<LinkedList<T>> table;
+        private LinkedList<T>[] table;
         private int capacity;
 
         public HashTable(int capacity = 10)
         {
             this.capacity = capacity;
-            table = new List<LinkedList<T>>(capacity);
+            table = new LinkedList<T>[capacity];
             for (int i = 0; i < capacity; i++)
             {
-                table.Add(new LinkedList<T>());
+                table[i] = new LinkedList<T>();
             }
         }
 
@@ -32,12 +30,11 @@ namespace HashTable
             if (!table[index].Contains(value))
             {
                 table[index].AddLast(value);
-                Console.WriteLine($"{value} inserido na posição {index} ");
+                Console.WriteLine($"{value} inserido na posição {index}");
             }
-
             else
             {
-                Console.WriteLine($"{value} já existe na posição {index} ");
+                Console.WriteLine($"{value} já existe na posição {index}");
             }
         }
 
@@ -58,12 +55,17 @@ namespace HashTable
             for (int i = 0; i < capacity; i++)
             {
                 Console.Write($"[{i}]: ");
-                foreach (var item in table[i])
+                var current = table[i].First;
+                while (current != null)
                 {
-                    Console.Write(item + " -> ");
-                    Console.Write("null");
+                    Console.Write(current.Value);
+                    current = current.Next;
+                    if (current != null)
+                    {
+                        Console.Write(" -> ");
+                    }
                 }
-
+                Console.WriteLine(); // Nova linha para cada bucket
             }
         }
     }

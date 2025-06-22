@@ -5,12 +5,16 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using HashTable;
 
 namespace HashTable
 {
-    public class Program
+    public class ProgramHash
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
+        {
+        }
+        public static void Executa()
         {
             HashTable<int> table = new HashTable<int>();
 

@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace Queues_01
 {
-    class Program
+   public class ProgramQueues_01
     {
         static void Main(string[] args)
         {
+            Executa();
+        }
+        public static void Executa()
+        { 
+
             int m, n, queue, LastInLine;
             int[,] mat;
             string[] values;

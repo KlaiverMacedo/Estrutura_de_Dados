@@ -30,7 +30,6 @@ namespace MainMenu
             Console.WriteLine("6 - Executar projeto de Tabela Hash: ");
             Console.WriteLine("7 - Executar projeto de Fila: ");
             Console.WriteLine("8 - Executar projeto de Algoritimos: ");
-            Console.WriteLine("9 - Executar projeto de Pilha: ");
             Console.WriteLine("0 - Sair");
             Console.Write("Escolha uma opção: ");
             var opcao = Console.ReadLine();
@@ -59,10 +58,7 @@ namespace MainMenu
                     MostrarMenuFila();
                     break;
                 case "8":
-                    MostrarMenuAlgoritimos();
-                    break;
-                case "9":
-                    MostrarMenuPilha();
+                    MostrarMenuAlgoritmos();
                     break;
                 case "0":
                     Console.WriteLine("Encerrando...");
@@ -243,24 +239,105 @@ namespace MainMenu
                 default:
                     Console.WriteLine("Opção Inválida. " + "Pressione ENTER para continuar.");
                     Console.ReadLine();
-                    MostrarMenuLista();
+                    MostrarMenuBateria();
                     break;
             }
         }
         static void MostrarMenuPesquisaDeDados()
         {
+            Console.WriteLine("=== PESQUISA DE DADOS ===");
+            Console.WriteLine("1 - Pesquisa de dados.");
+            Console.WriteLine("0 - Voltar o Menu principal");
+            var lista = Console.ReadLine();
+
+            switch (lista)
+            {
+                case "1":
+                    DataSearch.PesquisadeDados();
+                    break;
+                case "0":
+                    Console.WriteLine("Voltando ao menu principal..." + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção Inválida. " + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPesquisaDeDados();
+                    break;
+            }
         }
         static void MostrarMenuTabelaHash()
         {
+            Console.WriteLine("=== TABELA HASH ===");
+            Console.WriteLine("1 - Tabela Hash.");
+            Console.WriteLine("0 - Voltar o Menu principal");
+            var lista = Console.ReadLine();
+
+            switch (lista)
+            {
+                case "1":
+                    TabelaHash.Tabela();
+                    break;
+                case "0":
+                    Console.WriteLine("Voltando ao menu principal..." + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção Inválida. " + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuTabelaHash();
+                    break;
+            }
         }
         static void MostrarMenuFila()
         {
+            Console.WriteLine("=== FILAS ===");
+            Console.WriteLine("1 - Fila 01.");
+            Console.WriteLine("0 - Voltar o Menu principal");
+            var lista = Console.ReadLine();
+
+            switch (lista)
+            {
+                case "1":
+                    Queues.Fila01();
+                    break;
+                case "0":
+                    Console.WriteLine("Voltando ao menu principal..." + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção Inválida. " + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuFila();
+                    break;
+            }
         }
-        static void MostrarMenuAlgoritimos()
+        static void MostrarMenuAlgoritmos()
         {
-        }
-        static void MostrarMenuPilha()
-        {
+            Console.WriteLine("=== ALGORITMOS ===");
+            Console.WriteLine("1 - Algoritmo 01.");
+            Console.WriteLine("0 - Voltar o Menu principal");
+            var lista = Console.ReadLine();
+
+            switch (lista)
+            {
+                case "1":
+                    Algoritmo.Algoritmo01();
+                    break;
+                case "0":
+                    Console.WriteLine("Voltando ao menu principal..." + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção Inválida. " + "Pressione ENTER para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuAlgoritmos();
+                    break;
+            }
         }
     }
 }
